@@ -1,0 +1,190 @@
+* {
+box-sizing: border-box;
+}
+
+.btn {
+  border-radius: 9px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.btn-warning {
+  color: white; 
+}
+
+.btn-warning:hover {
+  color:white;
+}
+
+.header-bg {
+  background: url('/img/Group.4634.png'), url('/img/Rectangle.1914.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+ 
+}
+
+.nav-item a:hover {
+  color: orange !important;
+  text-decoration: underline;
+}
+
+#showcase {
+  margin: 2rem 0;
+}
+#showcase .container, #about-us .container{
+  justify-content: space-around;
+}
+
+#showcase .content, #about-us .content {
+  align-self: center;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: white;
+}
+
+#showcase p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+#showcase img, #about-us img {
+  margin: 1rem auto 1rem auto;
+  display: block;
+  width: 80%;
+}
+
+#showcase i {
+  color: orange;
+}
+
+.fas span {
+  color: white;
+}
+
+.btn-outline-light:hover {
+  color: grey;
+}
+
+
+.collapse-my5, .collapse-my5-1 {
+  display: none;
+} 
+
+.my-5 .row {
+  display: flex;
+  margin: 0 2rem;
+}
+
+#about-us img {
+  width: 50%;
+}
+
+.about-us-bg {
+  background: url('/img/bg-about-us.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-bg {
+  background: url('/img/Features.png');
+  background-color: #F5F5F5;
+  background-repeat: no-repeat;
+  padding: 3rem;
+}
+
+.mobile-features img {
+  width: 100%;
+}
+
+.grid-wrapper img {
+  padding: 1rem 1rem 0 0;
+  margin: auto;
+  
+}
+
+@media(min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+
+  .collapse-my5 {
+    display: inline;
+  }
+}
+
+
+@media(min-width: 992px) {
+  .container {
+      max-width: 960px;
+    }
+
+  .nav-item {
+    padding-right: 2rem;
+    }   
+
+  .text-pop p {
+    margin: 2rem 0;
+  }
+
+  #showcase .container, #about-us .container {
+    display: flex;
+    
+  }
+
+  #showcase .content, #about-us .content {
+    text-align: left;
+    
+}
+
+  #showcase img{
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    width: 30rem; 
+  }
+
+  .collapse-my5-1 {
+    display: inline;
+  }
+  
+  .about-us-bg {
+    background-position: left;
+  }
+
+
+
+  .grid-wrapper .flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+@media(min-width: 1200px) {
+  .container {
+     max-width: 1140px;
+    }
+
+}
+
+
+@media(min-width: 1400px) {
+  .container {
+      max-width: 1320px;
+  }
+
+}
+
+
+
+
