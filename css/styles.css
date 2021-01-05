@@ -114,7 +114,7 @@ html, body {
   /* padding: 3rem; */
 }
 
-.mobile-features img {
+.mobile-features img, .mobile-features img {
   width: 100%;
 }
 
@@ -129,7 +129,7 @@ html, body {
 }
 
 .app-stat-bg {
-  background-image: url('img/statistic.png');
+  background-image: url('/img/statistic.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -143,6 +143,62 @@ html, body {
 #app-stat .stat-box p {
   font-weight: 500;
 }
+
+.download-bg {
+  background-image: url('/img/Banner.png');
+}
+.mask-group img{
+  padding-top: 6rem;
+}
+
+.download-bg h1 {
+  font-weight: 700;
+  color: white;
+  font-size: 3.1rem;
+}
+
+.download-bg p {
+  color: white;
+  padding: 1rem 0 1rem 0;
+}
+.buttons-app img{
+  margin-right: 1rem;
+}
+
+.forms {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.forms p {
+  margin: 0;
+}
+
+.footer-bg {
+  background-image: url('/img/footer.png');
+}
+
+.footer-nav a {
+  text-decoration: none;
+}
+
+.socialmedia a{
+  color: white;
+  font-size: 1rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.socialmedia {
+ text-align: center;
+}
+
+.socialmedia .box {
+  background-color: rgb(112, 112, 112, 0.15);
+  border-radius: 30%;
+  width: 100px;
+}
+
 @media(min-width: 768px) {
   .container {
       max-width: 720px;
@@ -220,6 +276,9 @@ html, body {
     justify-content: space-between;
   }
 
+  .mask-group img{
+    justify-content: right;
+  }
 @media(min-width: 1200px) {
   .container {
      max-width: 1140px;
