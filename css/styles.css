@@ -29,7 +29,7 @@ html, body {
 }
 
 .header-bg {
-  background: url('/img/Group.4634.png'), url('/img/Rectangle.1914.png');
+  background: url('img/Group.4634.png'), url('img/Rectangle.1914.png');
   background-repeat: no-repeat;
   background-position: bottom;
  
@@ -101,13 +101,13 @@ html, body {
 }
 
 .about-us-bg {
-  background: url('/img/bg-about-us.png');
+  background: url('img/bg-about-us.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .features-bg {
-  background: url('/img/Features.png');
+  background: url('img/Features.png');
   background-color: #F5F5F5;
   background-repeat: no-repeat;
   padding-top: 1.5rem;
@@ -129,7 +129,7 @@ html, body {
 }
 
 .app-stat-bg {
-  background-image: url('/img/statistic.png');
+  background-image: url('img/statistic.png');
   background-repeat: no-repeat;
   background-position: center;
 }
