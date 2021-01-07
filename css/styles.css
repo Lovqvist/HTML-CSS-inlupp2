@@ -6,7 +6,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #333333;
-
 } 
 
 .btn {
@@ -28,17 +27,38 @@ html, body {
   color: #FFBB00;
 }
 
+.btn-yellow:hover {
+  background-color:  rgb(255, 187, 0, 0.25);
+  color: #FFBB00;
+}
+
+.btn-yellow:active {
+  border-color: black;
+}
+
+.btn-outline-light:hover {
+  color: grey;
+}
+
+#buttons-app {
+  display: flex;
+  justify-content: center;
+}
+
 .header-bg {
-  background: url('img/Group.4634.png'), url('img/Rectangle.1914.png');
+  background: url('/img/Group.4634.png'), url('/img/Rectangle.1914.png');
   background-repeat: no-repeat;
   background-position: bottom;
- 
 }
+
+
 
 .nav-item a:hover {
   color: orange !important;
   text-decoration: underline;
 }
+
+
 
 #showcase {
   margin: 2rem 0;
@@ -68,7 +88,7 @@ html, body {
 #showcase img, #about-us img {
   margin: 1rem auto 1rem auto;
   display: block;
-  width: 80%;
+  /* width: 100%; */
 }
 
 #showcase i {
@@ -79,9 +99,6 @@ html, body {
   color: white;
 }
 
-.btn-outline-light:hover {
-  color: grey;
-}
 
 
 .collapse-my5, .collapse-my5-1 {
@@ -93,28 +110,50 @@ html, body {
   margin: 0 2rem;
 }
 
+
+
 #about-us h1, .features-bg h1, #app-screen h1, #app-stat h1{
   font-weight: 900;
 }
-#about-us img {
-  width: 50%;
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-.about-us-bg {
-  background: url('img/bg-about-us.png');
+.image2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+  z-index: 2;
+}
+
+.image3 {
+  position: absolute;
+  top: 1rem;
+  left: 4rem;
+  border: 1px solid black;
+}
+
+/* .about-us-bg {
+  background: url('/img/bg-about-us.png');
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
+
+
 
 .features-bg {
-  background: url('img/Features.png');
+  background: url('/img/Features.png');
   background-color: #F5F5F5;
   background-repeat: no-repeat;
   padding-top: 1.5rem;
   /* padding: 3rem; */
 }
 
-.mobile-features img, .mobile-features img {
+.mobile-features img{
   width: 100%;
 }
 
@@ -127,6 +166,8 @@ html, body {
   padding: 1rem 1rem 0 0;
   margin: auto; 
 }
+
+
 
 .app-stat-bg {
   background-image: url('/img/statistic.png');
@@ -143,6 +184,8 @@ html, body {
 #app-stat .stat-box p {
   font-weight: 500;
 }
+
+
 
 .download-bg {
   background-image: url('/img/Banner.png');
@@ -161,9 +204,14 @@ html, body {
   color: white;
   padding: 1rem 0 1rem 0;
 }
-.buttons-app img{
+
+#buttons-app img{
+  margin: 0;
   margin-right: 1rem;
+  width: 10rem;
 }
+
+
 
 .forms {
   width: 50%;
@@ -175,12 +223,18 @@ html, body {
   margin: 0;
 }
 
+
+
 .footer-bg {
   background-image: url('/img/footer.png');
 }
 
-.footer-nav a {
-  text-decoration: none;
+.footer-bg .container {
+  text-align: center;
+}
+
+.footer-bg ul {
+  display: none;
 }
 
 .socialmedia a{
@@ -196,18 +250,39 @@ html, body {
 .socialmedia .box {
   background-color: rgb(112, 112, 112, 0.15);
   border-radius: 30%;
-  width: 100px;
 }
+
+.grey {
+  background-color: #CCCCCC;
+
+}
+
+
 
 @media(min-width: 768px) {
   .container {
       max-width: 720px;
   }
 
+
+
   .collapse-my5 {
     display: inline;
   }
+
+
+
+  #about-us .content {
+    padding-left: 0;
+  }
+
+
+
+  .footer-bg ul {
+    display: flex;
+  }
 }
+
 
 
 @media(min-width: 992px) {
@@ -215,22 +290,23 @@ html, body {
       max-width: 960px;
     }
 
+  #buttons-app {
+    justify-content: left;
+    text-align: left;
+  }  
+
   .nav-item {
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     }   
 
-  .text-pop p {
-    margin: 2rem 0;
-  }
+
 
   #showcase .container, #about-us .container {
     display: flex;
-    
   }
 
   #showcase .content, #about-us .content {
     text-align: left;
-    
 }
 
   #showcase img{
@@ -241,17 +317,25 @@ html, body {
     width: 30rem; 
   }
 
+
+
   .collapse-my5-1 {
     display: inline;
   }
-  
-  .about-us-bg {
-    background-position: left;
+
+
+
+  #about-us .content {
+    padding-left: 15rem;
   }
 
-  .about-us-bg .content {
-    padding-left: 10rem;
+  .image3 {
+    position: absolute;
+    top: 1rem;
+    left: -8rem;
+    border: 1px solid black;
   }
+
 
 
   .grid-wrapper .flex {
@@ -265,20 +349,29 @@ html, body {
     column-gap: 1rem;
   }
 
+
+
   #app-screen .content, #app-stat .content {
     width: 50%;
     margin: auto;
     padding-top: 3rem;
   }
 
+
+
   #app-stat .flex {
     display: flex;
     justify-content: space-between;
   }
 
+
+
   .mask-group img{
     justify-content: right;
   }
+
+
+
 @media(min-width: 1200px) {
   .container {
      max-width: 1140px;
@@ -287,13 +380,10 @@ html, body {
 }
 
 
+
 @media(min-width: 1400px) {
   .container {
       max-width: 1320px;
   }
 
 }
-
-
-
-
