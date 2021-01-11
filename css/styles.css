@@ -1,3 +1,10 @@
+:root {
+  --primary: #3096FE;
+  --secondary: #FFBB00;
+  --text: #333333;
+  --btn-bg-yellow: rgb(255, 187, 0, 0.15)
+}
+
 * {
 box-sizing: border-box;
 }
@@ -16,6 +23,7 @@ html, body {
 
 .btn-warning {
   color: white; 
+  background-color: var(--secondary) ;
 }
 
 .btn-warning:hover {
@@ -23,23 +31,31 @@ html, body {
 }
 
 .btn-yellow {
-  background-color: rgb(255, 187, 0, 0.15);
-  color: #FFBB00;
+  background-color: var(--btn-bg-yellow);
+  color: var(--secondary);
 }
 
 .btn-yellow:hover {
-  background-color:  rgb(255, 187, 0, 0.25);
-  color: #FFBB00;
+  opacity: 0.8;
+  color: var(--secondary);
 }
 
-.btn-yellow:active {
-  border-color: black;
-}
 
 .btn-outline-light:hover {
-  color: grey;
+  color: var(--primary);
 }
 
+.btn-blue {
+  background-color: var(--primary);
+  color: white;
+  width: 200px;
+  height: 50px;
+}
+
+.btn-blue:hover{
+  opacity: 0.8;
+  color: white;
+}
 #buttons-app {
   display: flex;
   justify-content: center;
@@ -85,10 +101,10 @@ html, body {
   color: white;
 }
 
-#showcase img, #about-us img {
+#showcase img {
   margin: 1rem auto 1rem auto;
   display: block;
-  /* width: 100%; */
+  width: 80%;
 }
 
 #showcase i {
@@ -107,10 +123,12 @@ html, body {
 
 .my-5 .row {
   display: flex;
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
 }
 
-
+.row img{
+  width: 9rem;
+}
 
 #about-us h1, .features-bg h1, #app-screen h1, #app-stat h1{
   font-weight: 900;
@@ -143,7 +161,9 @@ html, body {
   background-position: center;
 } */
 
-
+#about-us .container {
+  padding-bottom: 2rem;
+}
 
 .features-bg {
   background: url('/img/Features.png');
@@ -153,7 +173,7 @@ html, body {
   /* padding: 3rem; */
 }
 
-.mobile-features img{
+.mobile-features img, .mask-group img{
   width: 100%;
 }
 
@@ -173,6 +193,7 @@ html, body {
   background-image: url('/img/statistic.png');
   background-repeat: no-repeat;
   background-position: center;
+  height: 400px;
 }
 
 #app-stat h2 {
@@ -190,9 +211,7 @@ html, body {
 .download-bg {
   background-image: url('/img/Banner.png');
 }
-.mask-group img{
-  padding-top: 6rem;
-}
+
 
 .download-bg h1 {
   font-weight: 700;
@@ -207,14 +226,19 @@ html, body {
 
 #buttons-app img{
   margin: 0;
-  margin-right: 1rem;
-  width: 10rem;
+  margin: 0.1rem;
+  width: 9.5rem;
 }
 
 
+.mask-group img {
+  /* width: 15rem; */
+  padding-top: 2rem;
+}
+
 
 .forms {
-  width: 50%;
+  width: 100%;
   text-align: center;
   margin: auto;
 }
@@ -223,6 +247,15 @@ html, body {
   margin: 0;
 }
 
+.form-control {
+  border: none;
+  background-color: #FBFBFB;
+  border-radius: 9px;
+}
+
+.form-group .textarea {
+  color: #3096FE;
+}
 
 
 .footer-bg {
@@ -243,19 +276,14 @@ html, body {
   margin: 0 1rem 0 1rem;
 }
 
-.socialmedia {
- text-align: center;
-}
+
 
 .socialmedia .box {
   background-color: rgb(112, 112, 112, 0.15);
   border-radius: 30%;
 }
 
-.grey {
-  background-color: #CCCCCC;
 
-}
 
 
 
@@ -264,13 +292,25 @@ html, body {
       max-width: 720px;
   }
 
+  #buttons-app img{
+    margin-right: 1rem;
+    width: 10rem;
+  }
 
+  .my-5 .row {
+   margin: 0 2rem;
+  }
 
+  .row img {
+    width: 10rem;
+  }
   .collapse-my5 {
     display: inline;
   }
 
-
+  .mobile-features img, .mask-group img{
+    width: auto;
+  }
 
   #about-us .content {
     padding-left: 0;
@@ -297,7 +337,7 @@ html, body {
 
   .nav-item {
     padding-right: 1.5rem;
-    }   
+  }   
 
 
 
@@ -307,7 +347,7 @@ html, body {
 
   #showcase .content, #about-us .content {
     text-align: left;
-}
+  }
 
   #showcase img{
     margin-top: 1rem;
@@ -336,7 +376,13 @@ html, body {
     border: 1px solid black;
   }
 
+  .mobile-features img, .mask-group img{
+    width: 100%;
+  }
 
+  .mask-group img{
+    justify-content: right;
+  }
 
   .grid-wrapper .flex {
     display: flex;
@@ -354,7 +400,7 @@ html, body {
   #app-screen .content, #app-stat .content {
     width: 50%;
     margin: auto;
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
   }
 
 
@@ -366,11 +412,9 @@ html, body {
 
 
 
-  .mask-group img{
-    justify-content: right;
-  }
+ 
 
-
+}
 
 @media(min-width: 1200px) {
   .container {
