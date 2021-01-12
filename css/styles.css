@@ -62,7 +62,7 @@ html, body {
 }
 
 .header-bg {
-  background: url('img/Group.4634.png'), url('img/Rectangle.1914.png');
+  background: url('/img/Group.4634.png'), url('/img/Rectangle.1914.png');
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -173,7 +173,7 @@ html, body {
 }
 
 .features-bg {
-  background: url('img/Features.png');
+  background: url('/img/Features.png');
   background-color: #F5F5F5;
   background-repeat: no-repeat;
   padding-top: 1.5rem;
@@ -197,7 +197,7 @@ html, body {
 
 
 .app-stat-bg {
-  background-image: url('img/statistic.png');
+  background-image: url('/img/statistic.png');
   background-repeat: no-repeat;
   background-position: center;
   height: 400px;
@@ -216,7 +216,7 @@ html, body {
 
 
 .download-bg {
-  background-image: url('img/Banner.png');
+  background-image: url('/img/Banner.png');
 }
 
 
@@ -243,11 +243,15 @@ html, body {
   padding-top: 2rem;
 }
 
+.forms-bg {
+  margin: 70px;
+}
 
 .forms {
   width: 100%;
   text-align: center;
   margin: auto;
+  margin: 30px;
 }
 
 .forms p {
@@ -258,15 +262,20 @@ html, body {
   border: none;
   background-color: #FBFBFB;
   border-radius: 9px;
+  padding: 1rem;
 }
 
-.form-group .textarea {
-  color: #3096FE;
+.textarea {
+  padding-bottom: 4rem;
+}
+]
+.form-group {
+  color: #3096FE !important; 
 }
 
 
 .footer-bg {
-  background-image: url('img/footer.png');
+  background-image: url('/img/footer.png');
 }
 
 .footer-bg .container {
