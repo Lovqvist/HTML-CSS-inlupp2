@@ -107,14 +107,40 @@ html, body {
   width: 80%;
 }
 
-#showcase i {
-  color: orange;
+
+.row-btn {
+  display: flex;
+  width: 320px; 
 }
 
-.fas span {
-  color: white;
+.card {
+  margin: 0 1rem 0 1rem;
+  border: 1px solid var(--secondary);
+  padding: 0.3rem;
+  border-radius: 50%;
+  text-align: center;
+  background-color: transparent;
 }
 
+.ball {
+  background-color: var(--secondary);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.row-btn p {
+  margin: auto;
+}
 
 
 .collapse-my5, .collapse-my5-1 {
@@ -213,7 +239,10 @@ html, body {
   font-weight: 500;
 }
 
-
+#app-stat .container {
+  height: 400px;
+  padding: 1rem;
+}
 
 .download-bg {
   background-image: url('../img/Banner.png');
@@ -250,7 +279,6 @@ html, body {
 .forms {
   width: 100%;
   text-align: center;
-  margin: auto;
   margin: 30px;
 }
 
@@ -363,6 +391,7 @@ html, body {
 
   #showcase .content, #about-us .content {
     text-align: left;
+    padding-right: 3rem;
   }
 
   #showcase img{
