@@ -1,5 +1,6 @@
 new WOW().init();
 
+
 function shiftLeft() {
   const boxes = document.querySelectorAll(".box");
   const tmpNode = boxes[0];
