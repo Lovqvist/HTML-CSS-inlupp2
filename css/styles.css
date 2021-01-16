@@ -366,6 +366,10 @@ padding:0 0 1rem 0;
   padding: 0.6rem;
 }
 
+.socialmedia .box1:hover {
+  opacity: 0.8;
+}
+
  /* Carousel starts */
  .carousel {
   display: flex;
@@ -839,7 +843,10 @@ left: -8%;
 }
  /* carousel ends */
 
-
+.mask-group img {
+  margin-right: 0;
+  width: 95%;
+}
 
 }
 
