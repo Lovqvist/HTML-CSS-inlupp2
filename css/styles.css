@@ -84,8 +84,8 @@ html, body {
   background: var(--secondary);
   position: absolute;
   bottom: 0.2rem;
-  left: 0.5rem;
-  right: 1.5rem;
+  left: 0rem;
+  right: 30rem;
 }
 
 #showcase {
@@ -620,6 +620,18 @@ left: -8%;
       max-width: 720px;
   }
 
+
+  
+.nav-link:hover::after {
+  content: " ";
+  height: 3px;
+  background: var(--secondary);
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0rem;
+  right: 41rem;
+}
+
   #buttons-app img{
     margin-right: 1rem;
     width: 10rem;
@@ -728,7 +740,16 @@ left: -8%;
     padding-right: 1.5rem;
   }   
 
-
+  
+  .nav-link:hover::after {
+    content: " ";
+    height: 3px;
+    background: var(--secondary);
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.5rem;
+    right: 1.5rem;
+  }
 
   #showcase .container, #about-us .container {
     display: flex;
